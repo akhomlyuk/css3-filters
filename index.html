@@ -25,16 +25,15 @@
     <div class="mx-auto p-1">
       <button type="button" class="btn btn-success" id="bgcolor-btn">Change bg color</button>
     </div>
-    <div class="mx-auto p-1">
-      <button type="button" class="btn btn-success" id="input-value">Input value</button>
-    </div>
   </header>
+
   <div class="container">
-    <div class="m-3 d-flex align-items-center">
-      <div class="img_box col-12 col-sm-8">
+    <div class="row">
+    <div class="m-1 d-flex justify-content-center">
+      <div class="img_box col-sm-8">
         <img class="img-fluid" src="img/pic.jpg" id="imgfilter" alt="...">
 
-        <div class="mx-auto p-1">
+        <div class="mx-auto m-2">
           <button type="button" class="btn btn-primary btn-sm" style="cursor: pointer;">
           <label style="cursor: pointer;"> <i style="cursor: pointer;" class="fa fa-upload p-2" aria-hidden="true"></i>Upload image
           <input class="btn btn-danger btn-file" style="display: none;" type="file" accept=".jpg,.jpeg,.png" id="upload">
@@ -42,12 +41,12 @@
       </button>
       </div>
 
-        <div class="loadImage mx-auto p-1">
+        <div class="loadImage mx-auto m-2">
           <button id="loadImage" type="button" class="btn btn-secondary btn-sm"><i class="fas fa-download p-2"></i></i>Download image</button>
         </div>
       </div>
 
-      <div class="controls_block img_box col-sm-4 p-3"> 
+      <div class="controls_block img_box m-2 col-sm-4"> 
 
         <div class="controls">
           <label id="label" for="grayscale">Grayscale</label>
@@ -83,6 +82,11 @@
           <label for="invert">Invert</label>
         <input type="range" class="form-range" min="0" max="100" value="0" id="invert">
         </div>
+
+        <div class="controls">
+          <label for="huerotate">Hue-rotate</label>
+        <input type="range" class="form-range" min="0" max="360" value="0" id="huerotate">
+        </div>
       
         <div class="controls">
         <label for="opacity">Opacity</label>
@@ -94,6 +98,8 @@
 
     </div>
 
+  </div> 
+
   </div>
   <footer>
     <div align="center"> 
@@ -103,10 +109,12 @@
     </div>
   </footer>
   <!-- End your project here-->
+  <!-- Yandex.Metrika counter --> <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(72826144, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/72826144" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
 </body>
 <!-- Main js file -->
 <script type="text/javascript" src="js/index.min.js"></script>
 <!-- Custom scripts -->
 <script type="text/javascript" src="js/filter.min.js"></script>
 <script type="text/javascript" src="js/app.min.js"></script>
+
 </html>
