@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="yandex-verification" content="c469b4bb7fd9e4de" />
   <title>CSS3 image filters</title>
   <!-- Favicon -->
   <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
@@ -32,7 +33,7 @@
     <div class="m-1 d-flex justify-content-center">
       <div class="img_box col-sm-8">
         <img class="img-fluid" src="img/pic.jpg" id="imgfilter" alt="...">
-
+      <textarea id="textarea" style="display: none;"></textarea>
         <div class="mx-auto m-2">
           <button type="button" onclick="ym(72826144,'reachGoal','upload'); return true;" class="btn btn-primary btn-sm" style="cursor: pointer;">
           <label style="cursor: pointer;"> <i style="cursor: pointer;" class="fa fa-upload p-2" aria-hidden="true"></i>Upload image
@@ -49,49 +50,50 @@
       <div class="controls_block img_box m-2 col-sm-4"> 
 
         <div class="controls">
-          <label id="label" for="grayscale">Grayscale</label>
+          <label id="labelgr" for="grayscale">Grayscale</label>
           <input type="range" class="form-range" min="0" max="100" value="0" id="grayscale">
       </div>
 
       <div class="controls">
-        <label for="sepia">Sepia</label>
+        <label id="labelsepia" for="sepia">Sepia</label>
         <input type="range" class="form-range" min="0" max="100" value="0" id="sepia">
         </div>
 
         <div class="controls">
-          <label for="blur">Blur</label>
+          <label id="labelblur" for="blur">Blur</label>
         <input type="range" class="form-range" min="0" max="20" value="0" id="blur">
         </div>
       
         <div class="controls">
-        <label for="contrast">Contrast</label>
+        <label id="labelcontrast" for="contrast">Contrast</label>
         <input type="range" class="form-range" min="0" max="200" value="100" id="contrast">
         </div>
         
         <div class="controls">
-          <label for="saturate">Saturate</label>
+          <label id="labelsat" for="saturate">Saturate</label>
         <input type="range" class="form-range" min="0" max="200" value="100" id="saturate">
         </div>
 
         <div class="controls">
-        <label for="brightness">Brightness</label>
+        <label id="labelbr" for="brightness">Brightness</label>
         <input type="range" class="form-range" min="0" max="200" value="100" id="brightness">
         </div>
 
         <div class="controls">
-          <label for="invert">Invert</label>
+          <label id="labelinv" for="invert">Invert</label>
         <input type="range" class="form-range" min="0" max="100" value="0" id="invert">
         </div>
 
         <div class="controls">
-          <label for="huerotate">Hue-rotate</label>
+          <label id="labelhue" for="huerotate">Hue-rotate</label>
         <input type="range" class="form-range" min="0" max="360" value="0" id="huerotate">
         </div>
       
         <div class="controls">
-        <label for="opacity">Opacity</label>
+        <label id="labelop" for="opacity">Opacity</label>
         <input type="range" class="form-range" min="0" max="100" value="100" id="opacity">
         <button type="button" class="btn btn-success" id="reset" disabled>Reset</button>
+
         </div>
 
       </div>
